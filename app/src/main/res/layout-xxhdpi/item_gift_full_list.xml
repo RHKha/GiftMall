@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="185dp"
+    android:layout_height="297dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/item_shape_card"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/fullListGiftIvId"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:src="@drawable/birthdaypic"
+            app:riv_corner_radius="3dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/fullListGiftTitleTvId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/fullListGiftPriceTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullListGiftTitleTvId"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullListGiftTitleTvId"
+            android:layout_alignBaseline="@+id/fullListGiftPriceTvId"
+            android:layout_toEndOf="@+id/fullListGiftPriceTvId"
+            android:text="@string/dollar_sign" />
+
+        <Button
+            android:id="@+id/fullListGiftBuyBtnId"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/item_solid_background"
+            android:text="Buy from"
+            android:textAllCaps="false"
+            android:textColor="@color/solidWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#000"
+        android:layout_marginTop="3dp"/>
+</LinearLayout>

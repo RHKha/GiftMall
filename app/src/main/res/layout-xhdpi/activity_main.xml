@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/solidAsh">
+
+    <RelativeLayout
+        android:id="@+id/singleFragReLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_view">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/multiFragReLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_view"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/anniversary_gift"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <FrameLayout
+                    android:id="@+id/anniversaryGiftFrameLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/birthday_gift"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+                <FrameLayout
+                    android:id="@+id/birthdayGiftFrameLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/christmas_gift"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+
+                <FrameLayout
+                    android:id="@+id/christmasGiftFrameLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/romantic_gift"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic" />
+
+                <FrameLayout
+                    android:id="@+id/romanticGiftFrameLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/valentine_gift"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic" />
+
+                <FrameLayout
+                    android:id="@+id/valentineGiftFrameLayoutId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+<!--    <com.applovin.mediation.ads.MaxAdView xmlns:maxads="http://schemas.applovin.com/android/1.0"-->
+<!--        android:id="@+id/applovinAdsId"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_above="@+id/nav_view"-->
+<!--        android:background="#fff"-->
+<!--        maxads:adUnitId="9ec5c977eb26ee89">-->
+<!--    </com.applovin.mediation.ads.MaxAdView>-->
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/nav_view"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/AdMOB_bannerAd">
+    </com.google.android.gms.ads.AdView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

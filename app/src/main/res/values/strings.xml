@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Giftidea</string>
+    <string name="title_home">Home</string>
+    <string name="title_category">Popular Gift</string>
+    <string name="title_gift_card">Gift Card</string>
+    <string name="title_diy_gift">DIY Gift</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="anniversary_gift">Anniversary Gift</string>
+    <string name="birthday_gift">Birthday Gift</string>
+    <string name="christmas_gift">Christmas Gift</string>
+    <string name="romantic_gift">Romantic Gift</string>
+    <string name="valentine_gift">Valentine Gift</string>
+    <string name="dollar_sign">$</string>
+
+    <string name="AdMOB_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="AdMOB_bannerAd">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
